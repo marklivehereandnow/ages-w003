@@ -8,7 +8,7 @@
         <title>Ages Cards</title>
     </h:head>
     <h:body>
-        <h1>ages-w003 ver 0.2  2014-5-5 23:44  w/ grid</h1> 
+        <h1>ages-w003 ver 0.2  2014-5-5 23:59  w/ grid and revert</h1> 
         <p:accordionPanel>
             <p:tab title="CardRow">
                 <h:panelGrid columns="2" cellpadding="10">
@@ -76,14 +76,26 @@
             </p:tab>
             <p:tab title="Player 1 --- Max">
                 <h1>Max</h1>
-                <h1>---</h1>
-                
-                <img src="http://2nd2go.org/ages/img/p1010.jpg" alt="p1010" title="p1010"/>
-                <img src="http://2nd2go.org/ages/img/p1011.jpg" alt="p1011" title="p1011"/>
-                <img src="http://2nd2go.org/ages/img/p1007.jpg" alt="p1007" title="p1007"/>
-                <img src="http://2nd2go.org/ages/img/p1032.jpg" alt="p1032" title="p1032"/>
-                <img src="http://2nd2go.org/ages/img/p1018.jpg" alt="p1018" title="p1018"/>
-                <img src="http://2nd2go.org/ages/img/p1001.jpg" alt="p1001" title="p1001"/>
+                <h1>======   </h1>
+            
+                <h:form>
+                    <h:graphicImage id="h1" value="/resources/img/p1010.jpg" />
+                    <p:draggable for="h1" revert="true"  />
+               
+                    <h:graphicImage id="h2" value="/resources/img/p1011.jpg" />
+                    <p:draggable for="h2" revert="true"  />
+             
+                    <h:graphicImage id="h3" value="/resources/img/p1007.jpg" />
+                    <p:draggable for="h3" revert="true"  />
+           
+                    <h:graphicImage id="h4" value="/resources/img/p1032.jpg" />
+                    <p:draggable for="h4" revert="true" />
+                    
+                    <h:graphicImage id="h5" value="/resources/img/p1018.jpg" />
+                    <p:draggable for="h5" revert="true"  />
+                    <h:graphicImage id="h6" value="/resources/img/p1001.jpg" />
+                    <p:draggable for="h6" revert="true"  />
+                </h:form>
                 <h:form>
                     <h:graphicImage id="p1078" value="/resources/img/p1078.jpg" />
                     <p:draggable for="p1078" grid="180,30"  />
