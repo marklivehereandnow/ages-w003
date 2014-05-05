@@ -8,7 +8,7 @@
         <title>Ages Cards</title>
     </h:head>
     <h:body>
-        <h1>ages-w003 ver 0.1  2014-5-5 23:09</h1> 
+        <h1>ages-w003 ver 0.2  2014-5-5 23:44  w/ grid</h1> 
         <p:accordionPanel>
             <p:tab title="CardRow">
                 <h:panelGrid columns="2" cellpadding="10">
@@ -76,6 +76,8 @@
             </p:tab>
             <p:tab title="Player 1 --- Max">
                 <h1>Max</h1>
+                <h1>---</h1>
+                
                 <img src="http://2nd2go.org/ages/img/p1010.jpg" alt="p1010" title="p1010"/>
                 <img src="http://2nd2go.org/ages/img/p1011.jpg" alt="p1011" title="p1011"/>
                 <img src="http://2nd2go.org/ages/img/p1007.jpg" alt="p1007" title="p1007"/>
@@ -84,8 +86,20 @@
                 <img src="http://2nd2go.org/ages/img/p1001.jpg" alt="p1001" title="p1001"/>
                 <h:form>
                     <h:graphicImage id="p1078" value="/resources/img/p1078.jpg" />
-                    <p:draggable for="p1078" />
+                    <p:draggable for="p1078" grid="180,30"  />
+               
+                    <h:graphicImage id="p1079" value="/resources/img/p1079.jpg" />
+                    <p:draggable for="p1079" grid="180,30"  />
+             
+                    <h:graphicImage id="p1080" value="/resources/img/p1080.jpg" />
+                    <p:draggable for="p1080" grid="180,30"  />
+           
+                    <h:graphicImage id="p1081" value="/resources/img/p1081.jpg" />
+                    <p:draggable for="p1081" grid="180,30"  />
                 </h:form>
+                
+                
+                
             </p:tab>
             <p:tab title="Player 2 --- Amy">
                 <h1>Amy</h1>
